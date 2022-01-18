@@ -1,2 +1,3 @@
 *.log
-config.yaml
+config_debug.ini
+config_release.ini
