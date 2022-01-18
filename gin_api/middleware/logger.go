@@ -14,7 +14,7 @@ import (
 func Logger() gin.HandlerFunc {
 
 	// 将日志输入到文件中
-	filePath := "log/log"
+	filePath := "var/log/blog"
 	linkName := "latest_log.log"   // 建立软链接
 	src, err := os.OpenFile(filePath, os.O_RDWR|os.O_CREATE, 0755)
 	if err != nil {
